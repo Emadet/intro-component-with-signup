@@ -81,27 +81,31 @@ form >button{
     text-transform: capitalize;
 }
 
-@media (max-width:900px){
+@media (max-width:600px){
     body{
         background: url(./images/bg-intro-mobile.png);
-        background-color: hsl(0, 100%, 74%) 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: hsl(0, 100%, 74%) ;
+        height: 100vh;
+        
     }
 
     .main-cont{
         width: 100%;
         flex-direction: column;
-        padding: 3rem 2rem;
+        padding: 4rem 1rem;
         justify-content: center;
         align-items: center;
-        ;
     }
 
     .cont-one{
         width: 100%;
-        padding:3rem 0 4rem ;
+        gap: 0.5rem;
+        padding-top: 2rem;
     }
     .cont-one h1{
-        font-size: 2.6rem;
+        font-size: 2rem;
         text-align: center;
     }
     .cont-one p{
@@ -110,5 +114,24 @@ form >button{
     }
     .cont-two{
         width: 100%;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width:400px){
+    .main-cont{
+        margin: 0 1rem;
+        padding: 3rem 1rem;
+    }
+    .cont-one{
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .cont-one h1{
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+    .cont-two form{
+        gap: 1rem;
     }
 }
